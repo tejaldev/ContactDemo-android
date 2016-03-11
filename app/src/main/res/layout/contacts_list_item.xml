@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="matrix"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/contactPic"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:typeface="normal"
+            android:textSize="22sp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:id="@+id/contactInitial"/>
+    </FrameLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:layout_weight="1">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/contactName"
+                  android:paddingTop="3dp"
+                  android:paddingBottom="3dp"
+                  android:layout_margin="3dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:typeface="sans"
+                  android:textSize="16sp"
+                  android:textColor="@android:color/background_dark"
+                  android:clickable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:typeface="monospace"
+            android:textSize="13sp"
+            android:phoneNumber="true"
+            android:clickable="true"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/contactNumber"/>
+    </LinearLayout>
+
+</LinearLayout>
